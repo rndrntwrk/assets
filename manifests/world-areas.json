@@ -365,7 +365,7 @@
           "id": "duel_arena_nurse",
           "type": "healer",
           "name": "Nurse Sarah",
-          "position": { "x": 55, "y": 0, "z": 105 },
+          "position": { "x": 345, "y": 0, "z": 376 },
           "dialogue": {
             "greeting": "Welcome to the Duel Arena hospital. Let me restore your health and prayer.",
             "heal": "There you go, fully restored!"
@@ -375,7 +375,7 @@
           "id": "duel_arena_scoreboard",
           "type": "scoreboard",
           "name": "Duel Scoreboard",
-          "position": { "x": 100, "y": 0, "z": 105 },
+          "position": { "x": 375, "y": 0, "z": 381 },
           "dialogue": {
             "greeting": "View the duel arena rankings and statistics."
           }
@@ -384,7 +384,7 @@
           "id": "duel_arena_guide",
           "type": "guide",
           "name": "Duel Master Marcus",
-          "position": { "x": 110, "y": 0, "z": 110 },
+          "position": { "x": 385, "y": 0, "z": 381 },
           "dialogue": {
             "greeting": "Welcome to the Duel Arena! Right-click another player and select 'Challenge to Duel' to begin. You can set rules and stake items before fighting."
           }
@@ -396,7 +396,7 @@
         {
           "id": "duel_arena_bank",
           "type": "bank",
-          "position": { "x": 135, "y": 0, "z": 115 },
+          "position": { "x": 395, "y": 0, "z": 381 },
           "bankId": "duel_arena_bank"
         }
       ]

@@ -1791,5 +1791,63 @@
     "spawnBiomes": [
       "desert"
     ]
+  },
+  {
+    "id": "duel_arena_guide",
+    "name": "Duel Master Marcus",
+    "description": "An arena guide who explains how to challenge another player and review duel rules.",
+    "category": "neutral",
+    "faction": "town",
+    "combat": {
+      "attackable": false
+    },
+    "movement": {
+      "type": "stationary",
+      "speed": 0,
+      "wanderRadius": 0
+    },
+    "services": {
+      "enabled": true,
+      "types": []
+    },
+    "dialogue": {
+      "entryNodeId": "greeting",
+      "nodes": [
+        {
+          "id": "greeting",
+          "text": "Welcome to the Duel Arena! What would you like to know?",
+          "responses": [
+            {
+              "text": "How do I challenge another player?",
+              "nextNodeId": "challenge"
+            },
+            {
+              "text": "What should I check before a duel?",
+              "nextNodeId": "rules"
+            },
+            {
+              "text": "Goodbye.",
+              "nextNodeId": "farewell"
+            }
+          ]
+        },
+        {
+          "id": "challenge",
+          "text": "In the Duel Arena, right-click another player and choose Challenge. Both players must agree before the duel can begin."
+        },
+        {
+          "id": "rules",
+          "text": "Review the rules and all items offered in the duel screens. Only accept when you agree with the other player."
+        },
+        {
+          "id": "farewell",
+          "text": "Good luck in the arena!"
+        }
+      ]
+    },
+    "appearance": {
+      "modelPath": "asset://models/npcs/captain-rowan/captain-rowan.vrm",
+      "scale": 1.0
+    }
   }
 ]

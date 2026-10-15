@@ -20,13 +20,13 @@ test("arena guide placement resolves to one noncombat, stationary NPC definition
   assert.deepEqual(guide.services.types, [], "Guidance must not advertise unimplemented services");
 });
 
-test("guide reuses a tracked humanoid model rather than the missing human fallback", () => {
+test("guide reuses an existing humanoid model path rather than the missing human fallback", () => {
   const guide = npcs.find(npc => npc.id === id);
   assert.ok(guide, "Missing guide definition");
   const model = guide.appearance.modelPath;
   assert.equal(model, npcs.find(npc => npc.id === "captain_rowan").appearance.modelPath);
   assert.ok(model.startsWith("asset://"));
-  assert.ok(existsSync(new URL(model.slice("asset://".length), root)), "Model must be tracked in assets");
+  assert.ok(existsSync(new URL(model.slice("asset://".length), root)), "Model path must exist in the assets checkout");
   assert.equal(guide.appearance.scale, 1);
 });
 
